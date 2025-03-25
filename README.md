@@ -116,7 +116,7 @@ fly deploy
 ## 📧 Contacto
 
 Creado por **Bruno Rodríguez**  
-📬 recibos@apes.edu.uy
+📬 brodriguez135@gmail.com
 
 ---
 

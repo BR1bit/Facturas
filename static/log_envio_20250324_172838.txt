@@ -1,0 +1,5 @@
+=== LOG DE ENVÍO - 2025-03-24 17:28:37 ===
+
+📎 Documento detectado: None
+ recibocandilesbrunorodriguez.pdf
+❌ recibocandilesbrunorodriguez.pdf no enviado: Documento no encontrado en el texto o no está en el Excel

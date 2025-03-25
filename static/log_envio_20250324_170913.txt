@@ -1,0 +1,4 @@
+=== LOG DE ENVÍO - 2025-03-24 17:09:13 ===
+
+ 2025_02_recibocandilesbrunorodriguez.pdf
+❌ 2025_02_recibocandilesbrunorodriguez.pdf no enviado: Documento no encontrado en el texto o no está en el Excel

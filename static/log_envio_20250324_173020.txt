@@ -1,0 +1,5 @@
+=== LOG DE ENVÍO - 2025-03-24 17:30:18 ===
+
+📎 Documento detectado: 43153054
+ recibocandilesbrunorodriguez.pdf
+❌ ERROR al enviar a brodriguez135@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7390611d885sm8493451b3a.116 - gsmtp')

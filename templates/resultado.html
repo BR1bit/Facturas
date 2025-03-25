@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Resultado del Envío</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+    }
+    .resumen {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .fallidos {
+      background: #ffe6e6;
+      border: 1px solid #ff4d4d;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+    .log-link {
+      display: block;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .log-link a {
+      padding: 0.6rem 1.2rem;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .log-link a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>📬 Resultado del Envío</h2>
+
+  <div class="resumen">
+    <p>✅ Recibos enviados correctamente: <strong>{{ enviados }}</strong></p>
+    <p>❌ Fallidos: <strong>{{ fallidos|length }}</strong></p>
+  </div>
+
+  {% if fallidos %}
+  <div class="fallidos">
+    <h3>Detalles de fallos:</h3>
+    <ul>
+      {% for item in fallidos %}
+        <li>{{ item[0] }} - {{ item[1] }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <div class="log-link">
+    <a href="{{ url_for('static', filename=log_path.split('/')[-1]) }}" download>
+      📎 Descargar log de envío
+    </a>
+  </div>
+</body>
+</html>

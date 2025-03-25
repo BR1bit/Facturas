@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Envío de Recibos</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input[type="file"] {
+      margin-top: 0.5rem;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-top: 20px;">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="max-width: 200px;">
+  </div>
+  <h2>📤 Envío de Recibos PDF</h2>
+  <form method="post" enctype="multipart/form-data">
+    <label for="excel">
+      Seleccionar archivo Excel (.xlsx):
+      <button type="button" onclick="mostrarInfo()" style="margin-left: 10px;">ℹ️ Info</button>
+    </label>
+    <input type="file" name="excel" accept=".xlsx" required>
+    <label for="pdf">Seleccionar archivo PDF con todos los recibos:</label>
+    <input type="file" name="pdf" accept="application/pdf" required>
+    <button type="submit">Enviar recibos</button>
+  </form>
+
+  <script>
+    function mostrarInfo() {
+      alert("📄 El archivo Excel debe tener las siguientes columnas:\n\n• Nombre\n• Documento (sin puntos ni guiones)\n• Email\n\nEjemplo:\nJuan Pérez, 43153054, juan@example.com");
+    }
+  </script>
+</body>
+</html>
+

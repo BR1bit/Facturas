@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 # Configurar correo
 CORREO_ORIGEN = "recibos@apes.edu.uy"
-CONTRASENA = "ovln ktsb vmti bwpy"
+CONTRASENA = "tu clave"
 DESTINATARIO_LOG = "recibos@apes.edu.uy"
 
 # Función para buscar el documento en el texto
